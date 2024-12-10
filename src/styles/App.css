@@ -1,0 +1,17 @@
+:root {
+  --navbar-bg: #fff;
+  --text-color: #000;
+  --card-bg: #f9f9f9;
+  --primary-color: #007bff;
+}
+
+body.dark {
+  --navbar-bg: #333;
+  --text-color: #fff;
+  --card-bg: #444;
+  --primary-color: #1e90ff;
+}
+
+body {
+  transition: background-color 0.3s, color 0.3s;
+}

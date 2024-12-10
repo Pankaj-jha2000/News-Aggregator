@@ -1,0 +1,108 @@
+.news-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f9;
+    transition: background-color 0.3s;
+  }
+  
+  body.dark-mode {
+    background-color: #333;
+    color: #f4f4f7;
+  }
+  
+  /* Header styles */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1d3557;
+    color: #fff;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .category-selection {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .category-button {
+    background: #222;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    flex: 1; /* Make buttons flexible to adjust to screen size */
+  }
+  
+  /* News Content styles */
+  .news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    color: inherit;
+  }
+  
+  @media (max-width: 768px) {
+    .news-grid {
+      grid-template-columns: 1fr; /* Single column layout for smaller screens */
+    }
+  }
+  
+  .news-card {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  body.dark-mode .news-card {
+    background: #222;
+    color: #fff;
+  }
+  
+  .news-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .news-heading {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  body.dark-mode .news-heading {
+    color: #fff;
+  }
+  
+  .news-description {
+    font-size: 0.9rem;
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  body.dark-mode .news-description {
+    color: #ccc;
+  }
+  
+  .news-link {
+    color: #1d3557;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  body.dark-mode .news-link {
+    color: #f4a261;
+  }
+  
+  body.dark-mode .news-container {
+    background-color: #222;
+  }
